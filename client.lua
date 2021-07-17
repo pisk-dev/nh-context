@@ -1,7 +1,7 @@
 RegisterNUICallback("dataPost", function(data, cb)
     SetNuiFocus(false)
     TriggerEvent(data.event, data.args)
-    TriggerServreEvent(data.serverevent, data.serverargs)
+    TriggerServerEvent(data.serverevent, data.serverargs)
     cb('ok')
 end)
 
